@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Button from "../Components/Button/Button";
 import "../Components/Button/Button.css";
 import "../Components/Background/HomeBackground2.css";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import c1 from "../Assets/c1.png";
 import c2 from "../Assets/c2.png";
 import c3 from "../Assets/c3.png";
@@ -15,10 +15,10 @@ const Home = () => {
   });
   const handleClick = (buttonType) => {
     if (buttonType === "start") {
-      navigate("/PixelHeartWeb/register");
+      navigate("/register");
       document.body.classList.remove("home");
     } else if (buttonType === "continue") {
-      navigate("/PixelHeartWeb/login");
+      navigate("/login");
       document.body.classList.remove("home");
     }
   };
@@ -39,9 +39,11 @@ const Home = () => {
               <a href="strona_about_us.html">
                 <div>About Us</div>
               </a>
+              <Link to="login">
               <a href="" onClick={() => handleClick("continue")}>
                 <div>Login</div>
               </a>
+              </Link>
               {/*<div> <Button onClick={() => handleClick()} text="Login" ></Button></div>*/}
             </div>
           </div>

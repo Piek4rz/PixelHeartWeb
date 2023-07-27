@@ -32,8 +32,6 @@ const Login = () =>{
     };
 
     const handleSubmit = (event) => {
-        event.preventDefault();
-        // Tutaj możesz dodać logikę uwierzytelniania użytkownika
         console.log('Zalogowano:', username, password, rememberMe);
     };
 
