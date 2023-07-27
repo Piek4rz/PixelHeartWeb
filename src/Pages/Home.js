@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
-
 import Button from "../Components/Button/Button";
 import "../Components/Button/Button.css";
 import "../Components/Background/HomeBackground2.css";
-import logo from "../Assets/logo.svg";
 import { useNavigate } from "react-router-dom";
 import c1 from "../Assets/c1.png";
 import c2 from "../Assets/c2.png";
@@ -17,10 +15,10 @@ const Home = () => {
   });
   const handleClick = (buttonType) => {
     if (buttonType === "start") {
-      navigate("/register");
+      navigate("/PixelHeartWeb/register");
       document.body.classList.remove("home");
     } else if (buttonType === "continue") {
-      navigate("/login");
+      navigate("/PixelHeartWeb/login");
       document.body.classList.remove("home");
     }
   };

@@ -15,10 +15,10 @@ const App = () => {
   return (
     <Routes>
       <Route path="/PixelHeartWeb" element={<Home />} />
-      <Route path="/register" element={<Registration />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/CreateProfile" element={<CreateProfile />} />
-      <Route path="/Main/*" element={<Main />} />
+      <Route path="/PixelHeartWeb/register" element={<Registration />} />
+      <Route path="/PixelHeartWeb/login" element={<Login />} />
+      <Route path="/PixelHeartWeb/CreateProfile" element={<CreateProfile />} />
+      <Route path="/PixelHeartWeb/Main/*" element={<Main />} />
     </Routes>
   );
 };
