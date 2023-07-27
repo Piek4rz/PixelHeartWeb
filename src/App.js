@@ -14,7 +14,7 @@ import "bootstrap/dist/css/bootstrap-grid.min.css";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/PixelHeartWeb" element={<Home />} />
       <Route path="/register" element={<Registration />} />
       <Route path="/login" element={<Login />} />
       <Route path="/CreateProfile" element={<CreateProfile />} />
