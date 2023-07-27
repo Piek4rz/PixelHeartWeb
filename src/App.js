@@ -10,6 +10,8 @@ import Login from "./Pages/Login";
 import CreateProfile from "./Pages/CreateProfile";
 import Main from "./Pages/Main";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const App = () => {
   return (

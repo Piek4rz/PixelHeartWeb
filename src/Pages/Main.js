@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../Components/Button/Button";
 import "../Components/Button/Button.css";
 import "../Components/Background/HomeBackground2.css";
-import { Link } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import { Route, Routes } from "react-router";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -13,6 +13,7 @@ import List from "./ProfileSubpages/List";
 
 const Main = () => {
   const [token, setToken] = useState(localStorage.getItem("token"));
+  const navigate = useNavigate();
   const [loggedUser, setLoggedUser] = useState({
     id: 0,
     name: "",
@@ -22,6 +23,12 @@ const Main = () => {
     photo: "",
     backstory: "",
   });
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    console.log("dupa");
+    setShowMenu(!showMenu);
+  };
 
   const [matches, setMatches] = useState([
     "Halincia123",
@@ -55,6 +62,17 @@ const Main = () => {
         console.log(error);
       });
   }, []);
+
+  const handleSettings = (event) => {
+    const selectedOption = event.target.value;
+
+    if (selectedOption === "logout") {
+      navigate("/");
+    }
+    else if (selectedOption === "updateProfile") {
+
+    }
+  };
   return (
     <div className="mainContainer">
       <div className="mainContents">
@@ -92,12 +110,40 @@ const Main = () => {
               <Link to="list">List</Link>
             </li>
             <li className="navbar-item">
-              <select className="selectCustom" id="main">
+              <select onChange={handleSettings} className="selectCustom" id="main">
                 <option hidden value="" disabled selected>Settings</option>
-                <option>Update Profile</option>
-                <option>Log Out</option>
+                <option value="updateProfile">Update Profile</option>
+                <option value="logout">Log Out</option>
               </select>
             </li>
+            <li className="bars" onClick={toggleMenu}>
+              <i className="fa fa-bars" aria-hidden="true"></i>
+            </li>
+            {showMenu && (
+
+                  <ul className="bar-menu">
+                    <li className="bar-item">
+                      <Link to="profile">
+                        <img src="https://static1.personality-database.com/profile_images/79234575fdf14620b58b46d00d826aff.png" alt="Profil"/>
+                        Profile
+                      </Link>
+                    </li>
+                    <li className="bar-item">
+                      <Link to="love">Find</Link>
+                    </li>
+                    <li className="bar-item">
+                      <Link to="list">List</Link>
+                    </li>
+                    <li className="bar-item">
+                      <select onChange={handleSettings} className="selectCustom" id="main">
+                        <option hidden value="" disabled selected>Settings</option>
+                        <option value="updateProfile">Update Profile</option>
+                        <option value="logout">Log Out</option>
+                      </select>
+                    </li>
+                  </ul>
+
+            )}
           </ul>
         </div>
         <Routes>

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "../Components/Background/LoginBackground.css"
 import Button from "../Components/Button/Button";
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 
 
@@ -65,7 +65,9 @@ const Login = () =>{
                                 <a href="" onClick={() => handleClick("back")}> &lt;Back</a>
                             </div>
                             <div className="col-lg-4 mt-5">
-                                <Button className="buttonRegister" onClick={() => handleSubmit()} text="Login!" />
+                                <Link to="/Main">
+                                    <Button className="buttonRegister" onClick={() => handleSubmit()} text="Login!" />
+                                </Link>
                             </div>
                             <div className="col-lg-2"></div>
                             <div className="col-lg-2"></div>
