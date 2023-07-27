@@ -1,0 +1,203 @@
+.registerBackground {
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(180deg, #D496A0 0%, #5A69B3 100%) top right;
+    clip-path: polygon(100% 100%, 100% 0%, 0% 0%, 60% 100%);
+
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.registerBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url("../../Assets/backgroundRegister.png");
+    background-repeat: no-repeat;
+    mix-blend-mode: darken;
+    opacity: 0;
+    animation: fade-in 2s ease forwards;
+}
+
+.registerBackground:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Assets/bgnoise2.svg");
+}
+
+.registerContainer {
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    background-color: transparent;
+}
+
+.registerText {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.row{
+    width: 60rem;
+}
+
+.registerForm {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem 3rem 0 3rem;
+    padding-bottom: 5rem;
+}
+
+.registerForm h2{
+    font-size: 2rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+    margin-left: 2rem;
+}
+
+
+label{
+    font-size: 1.5rem;
+}
+
+
+.registerForm a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #5A69B3;
+}
+
+#loginButtons{
+    margin-top: 5rem;
+}
+
+
+.inputField {
+    border-radius: 50px;
+    border-color: #5A69B3;
+    border-width: 1px;
+    padding: 1rem;
+    margin-top: 0;
+    outline: none;
+    width: 25rem;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #5A69B3;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #5A69B3;
+    outline: none;
+    text-align: center;
+}
+
+
+
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #5A69B3;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5A69B3;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scaleX(1);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .registerPage{
+        /*background: linear-gradient(rgba(255, 255, 255, 0),white, rgba(255, 255, 255, 0));*/
+        height: 100%;
+    }
+
+    .registerBackground{
+        top: 0;
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(180deg, #D496A0, #5A69B3, white) top right;
+        clip-path: none;
+    }
+
+
+    .registerContainer{
+        margin: 10rem 2rem 2rem;
+
+        align-items: flex-start;
+    }
+
+    .registerText{
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .registerContainer{
+        margin-top: 3rem;
+    }
+
+    .inputField{
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .inputField{
+        width: 12rem;
+        padding: 0.5rem;
+    }
+
+    .registerContainer{
+        margin-left: 0.5rem;
+    }
+}
+
+

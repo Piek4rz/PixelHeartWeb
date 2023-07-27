@@ -1,0 +1,49 @@
+.allButtons {
+    font-family: 'Teko', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    background: #5A69B2;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    width: 17rem;
+    height: 5.5rem;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+.allButtons:hover{
+    transform: scale(1.1);
+}
+
+.allButtons:active{
+    background: #6673b3;
+
+}
+
+.buttonStart{
+    position: absolute;
+    left: 5%;
+    top: 55%;
+}
+
+.buttonContinue{
+    position: absolute;
+    right: 5%;
+    top: 55%;
+}
+
+.buttonRegister{
+}
+
+.buttonConfirm {
+    position: relative;
+    align-self: center;
+}
+
+@media screen and (max-width: 425px){
+    .allButtons {
+        width: 13rem;
+        height: 4.5rem;
+    }
+}
