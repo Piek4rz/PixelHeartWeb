@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PixelHeartWeb/static/css/main.257ec5f4.css",
-    "main.js": "/PixelHeartWeb/static/js/main.d3fd3594.js",
+    "main.js": "/PixelHeartWeb/static/js/main.bd6a4615.js",
     "static/js/787.f8735284.chunk.js": "/PixelHeartWeb/static/js/787.f8735284.chunk.js",
     "static/media/bg1.png": "/PixelHeartWeb/static/media/bg1.0832d97563feed9825a8.png",
     "static/media/floatingIsland.png": "/PixelHeartWeb/static/media/floatingIsland.97b8f66caddfe9f0095d.png",
@@ -11,11 +11,11 @@
     "static/media/bgnoise2.svg": "/PixelHeartWeb/static/media/bgnoise2.3e8982fb656850d167be.svg",
     "index.html": "/PixelHeartWeb/index.html",
     "main.257ec5f4.css.map": "/PixelHeartWeb/static/css/main.257ec5f4.css.map",
-    "main.d3fd3594.js.map": "/PixelHeartWeb/static/js/main.d3fd3594.js.map",
+    "main.bd6a4615.js.map": "/PixelHeartWeb/static/js/main.bd6a4615.js.map",
     "787.f8735284.chunk.js.map": "/PixelHeartWeb/static/js/787.f8735284.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.257ec5f4.css",
-    "static/js/main.d3fd3594.js"
+    "static/js/main.bd6a4615.js"
   ]
 }
