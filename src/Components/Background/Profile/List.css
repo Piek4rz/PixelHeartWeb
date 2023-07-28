@@ -1,0 +1,15 @@
+.profilesList{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: inherit;
+    justify-content: space-evenly;
+}
+
+.profileCard{
+    background: #182349;
+    flex-grow: 1;
+    border-radius: 20px;
+    height: 6rem;
+}

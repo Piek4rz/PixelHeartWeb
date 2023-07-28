@@ -98,7 +98,7 @@ const Main = () => {
           <ul className="navbar-menu">
             <li className="navbar-item">
                 <Link to="profile">
-                  <img src="https://static1.personality-database.com/profile_images/79234575fdf14620b58b46d00d826aff.png" alt="Profil"/>
+                  {/*<img src="https://static1.personality-database.com/profile_images/79234575fdf14620b58b46d00d826aff.png" alt="Profil"/>*/}
                   Profile
                 </Link>
             </li>

@@ -50,9 +50,12 @@ const Profile = () => {
                     <img src={s6}/>
                 </div>
             </div>
-            <div className="centeredContainer">
-                <div className="descContainer">
-
+            <div className="centeredContainer bottom">
+                <div className="stats desc">
+                    <p>Description</p>
+                </div>
+                <div className="stats games">
+                    <p>Fav games</p>
                 </div>
             </div>
         </div>

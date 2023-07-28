@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    width: inherit;
 }
 
 .columnContainer{
@@ -37,6 +37,31 @@
 
 .stats{
     margin-top: 5rem;
+    padding: 2rem 1rem 2rem 1rem;
+    background: #182349;
+    border-radius: 20px;
+}
+
+.games{
+    flex-grow: 1;
+    padding: 0.5rem 2rem;
+    height: 25vh;
+}
+
+.desc{
+    margin-top: 5rem;
+    display: flex;
+    justify-items: center;
+    height: 25vh;
+    flex-grow: 1;
+    padding: 0.5rem 2rem;
+}
+
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    column-gap: 6rem;
 }
 
 .textContainer{
@@ -49,14 +74,4 @@
 
 .textContainer p{
     font-size: 1em;
-}
-
-.descContainer{
-    margin-top: 5rem;
-    display: flex;
-    justify-items: center;
-    background: linear-gradient(rgba(252, 252, 252, 0.5), rgba(204, 204, 204, 0));
-    height: 15vh;
-    width: 65%;
-    border-radius: 20px;
 }
