@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../Components/Button/Button";
 import "../Components/Button/Button.css";
 import "../Components/Background/HomeBackground2.css";
-import {Link, useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Route, Routes } from "react-router";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -67,9 +67,7 @@ const Main = () => {
 
     if (selectedOption === "logout") {
       navigate("/");
-    }
-    else if (selectedOption === "updateProfile") {
-
+    } else if (selectedOption === "updateProfile") {
     }
   };
   return (
@@ -94,16 +92,21 @@ const Main = () => {
         {/*</nav>*/}
 
         <div className="nav">
-          <a href="#" className="navbar-brand">PixelHeart</a>
+          <a href="#" className="navbar-brand">
+            PixelHeart
+          </a>
           <ul className="navbar-menu">
             <li className="navbar-item">
-                <Link to="profile">
-                  {/*<img src="https://static1.personality-database.com/profile_images/79234575fdf14620b58b46d00d826aff.png" alt="Profil"/>*/}
-                  Profile
-                </Link>
+              <Link to="profile">
+                <img
+                  src="https://static1.personality-database.com/profile_images/79234575fdf14620b58b46d00d826aff.png"
+                  alt="Profil"
+                />
+                Profile
+              </Link>
             </li>
             <li className="navbar-item">
-              <Link to="love">Find</Link>
+              <Link to="love">Explore</Link>
             </li>
             <li className="navbar-item">
               <Link to="list">List</Link>
@@ -119,29 +122,36 @@ const Main = () => {
               <i className="fa fa-bars" aria-hidden="true"></i>
             </li>
             {showMenu && (
-
-                  <ul className="bar-menu">
-                    <li className="bar-item">
-                      <Link to="profile">
-                        <img src="https://static1.personality-database.com/profile_images/79234575fdf14620b58b46d00d826aff.png" alt="Profil"/>
-                        Profile
-                      </Link>
-                    </li>
-                    <li className="bar-item">
-                      <Link to="love">Find</Link>
-                    </li>
-                    <li className="bar-item">
-                      <Link to="list">List</Link>
-                    </li>
-                    <li className="bar-item">
-                      <select onChange={handleSettings} className="selectCustom" id="main">
-                        <option hidden value="" disabled selected>Settings</option>
-                        <option value="updateProfile">Update Profile</option>
-                        <option value="logout">Log Out</option>
-                      </select>
-                    </li>
-                  </ul>
-
+              <ul className="bar-menu">
+                <li className="bar-item">
+                  <Link to="profile">
+                    <img
+                      src="https://static1.personality-database.com/profile_images/79234575fdf14620b58b46d00d826aff.png"
+                      alt="Profil"
+                    />
+                    Profile
+                  </Link>
+                </li>
+                <li className="bar-item">
+                  <Link to="love">Explore</Link>
+                </li>
+                <li className="bar-item">
+                  <Link to="list">List</Link>
+                </li>
+                <li className="bar-item">
+                  <select
+                    onChange={handleSettings}
+                    className="selectCustom"
+                    id="main"
+                  >
+                    <option hidden value="" disabled selected>
+                      Settings
+                    </option>
+                    <option value="updateProfile">Update Profile</option>
+                    <option value="logout">Log Out</option>
+                  </select>
+                </li>
+              </ul>
             )}
           </ul>
         </div>
