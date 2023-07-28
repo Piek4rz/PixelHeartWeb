@@ -1,20 +1,32 @@
 {
   "files": {
-    "main.css": "/PixelHeartWeb/static/css/main.257ec5f4.css",
-    "main.js": "/PixelHeartWeb/static/js/main.9c8f4686.js",
+    "main.css": "/PixelHeartWeb/static/css/main.92b09a42.css",
+    "main.js": "/PixelHeartWeb/static/js/main.8c254c62.js",
     "static/js/787.f8735284.chunk.js": "/PixelHeartWeb/static/js/787.f8735284.chunk.js",
     "static/media/bg1.png": "/PixelHeartWeb/static/media/bg1.0832d97563feed9825a8.png",
+    "static/media/fa-solid-900.ttf": "/PixelHeartWeb/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/person1.png": "/PixelHeartWeb/static/media/person1.77c122be8d14257b2f37.png",
     "static/media/floatingIsland.png": "/PixelHeartWeb/static/media/floatingIsland.97b8f66caddfe9f0095d.png",
     "static/media/backgroundHome.png": "/PixelHeartWeb/static/media/backgroundHome.66094b2a8d478547e4b1.png",
+    "static/media/person2.png": "/PixelHeartWeb/static/media/person2.8c79349ef00bf43b26f5.png",
     "static/media/backgroundRegister.png": "/PixelHeartWeb/static/media/backgroundRegister.aeb543b13592b0bdd9ac.png",
+    "static/media/person3.png": "/PixelHeartWeb/static/media/person3.20daf8c61c8981ff4c94.png",
+    "static/media/fa-brands-400.ttf": "/PixelHeartWeb/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/PixelHeartWeb/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/fa-brands-400.woff2": "/PixelHeartWeb/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/fa-regular-400.ttf": "/PixelHeartWeb/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/fa-regular-400.woff2": "/PixelHeartWeb/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/questionMark.png": "/PixelHeartWeb/static/media/questionMark.ba7ab5d791f9a775b74f.png",
+    "static/media/fa-v4compatibility.ttf": "/PixelHeartWeb/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/PixelHeartWeb/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "static/media/bgnoise2.svg": "/PixelHeartWeb/static/media/bgnoise2.3e8982fb656850d167be.svg",
     "index.html": "/PixelHeartWeb/index.html",
-    "main.257ec5f4.css.map": "/PixelHeartWeb/static/css/main.257ec5f4.css.map",
-    "main.9c8f4686.js.map": "/PixelHeartWeb/static/js/main.9c8f4686.js.map",
+    "main.92b09a42.css.map": "/PixelHeartWeb/static/css/main.92b09a42.css.map",
+    "main.8c254c62.js.map": "/PixelHeartWeb/static/js/main.8c254c62.js.map",
     "787.f8735284.chunk.js.map": "/PixelHeartWeb/static/js/787.f8735284.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.257ec5f4.css",
-    "static/js/main.9c8f4686.js"
+    "static/css/main.92b09a42.css",
+    "static/js/main.8c254c62.js"
   ]
 }
