@@ -9,25 +9,62 @@ import { useState, useEffect } from "react";
 const Find = () => {
   const [findButton, setFindButton] = useState(true);
   const [findMatch, setMatch] = useState(0);
-  const matches = [person1, person2, person3];
+  const [color, setColor] = useState("");
+  const matches = [
+    {
+      photo: person1,
+      name: "Jane",
+      lvl: 21,
+      color: "green",
+    },
+    {
+      photo: person2,
+      name: "Mikel",
+      lvl: 25,
+      color: "blue",
+    },
+    {
+      photo: person3,
+      name: "Joshua",
+      lvl: 29,
+      color: "red",
+    },
+  ];
 
   const nextMatch = () => {
-    setMatch(findMatch + 1);
-    if (findMatch >= 2) {
-      setMatch(0);
-    }
+    setMatch((prevMatch) => {
+      let newMatch = prevMatch + 1;
+      if (newMatch >= matches.length) {
+        newMatch = 0;
+      }
+      setColor(matches[newMatch].color);
+      return newMatch;
+    });
   };
 
   return (
-    <div class="explore">
+    <div style={{ backgroundColor: color }} class="explore">
       {findButton ? (
         <img src={photo}></img>
       ) : (
-        <img src={matches[findMatch]}></img>
+        <div className="profile">
+          <div>
+            <p className="lvl">Lv {matches[findMatch].lvl}</p>
+            <p>{matches[findMatch].name}</p>
+          </div>
+          <img src={matches[findMatch].photo}></img>
+        </div>
       )}
       {findButton ? (
         <div className="chooseButtons">
-          <button onClick={() => setFindButton(false)}>Find</button>
+          <button
+            onClick={() => {
+              setFindButton(false);
+              setColor(matches[0].color);
+            }}
+          >
+            Find
+          </button>
         </div>
       ) : (
         <div className="chooseButtons">

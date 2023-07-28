@@ -1,16 +1,19 @@
 .explore {
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: solid black 0.5rem;
+  background-color: rebeccapurple;
+  width: 40rem;
+  margin: 0 auto;
 }
 
 .explore img {
-  height: 40rem;
+  height: 35rem;
   z-index: 100;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border: solid white 0.25rem;
 }
 
 .chooseButtons {
@@ -21,4 +24,26 @@
 
 button {
   margin: 1rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile p {
+  font-size: 4rem;
+  margin: 0.5rem;
+}
+
+.profile div {
+  font-size: 4rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.lvl {
+  color: rgba(2, 255, 2, 0.918);
 }
