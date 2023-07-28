@@ -26,7 +26,6 @@ const Main = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
-    console.log("dupa");
     setShowMenu(!showMenu);
   };
 
