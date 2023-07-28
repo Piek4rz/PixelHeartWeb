@@ -1,21 +1,11 @@
 .mainContainer {
   height: 100vh;
-  background: #2b3969ff;
+  background: #2b3969ff url("../../Assets/bgnoise2.svg");
   overflow-x: hidden;
   color: white;
   font-size: 50px;
 }
 
-.mainContainer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../../Assets/bgnoise2.svg");
-  z-index: 0;
-
-}
 
 .mainContents {
   margin: 1rem;
@@ -33,7 +23,7 @@
 /*}*/
 
 .nav {
-  background: #182349;
+  background: rgba(4, 8, 21, 0.50);
   display: flex;
   justify-content: space-between;
   align-items: center;
