@@ -71,6 +71,7 @@ const Home = () => {
             <span></span>
           </div>
           <h1>Info</h1>
+          <h2>This is only preview frontend version, without any backend we are working on</h2>
         </div>
       </div>
       <div className="clouds">
