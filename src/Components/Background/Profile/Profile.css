@@ -48,11 +48,10 @@
     height: 25vh;
 }
 
-.desc{
+.centeredContainer .desc{
     margin-top: 5rem;
     display: flex;
     justify-items: center;
-    height: 25vh;
     flex-grow: 1;
     padding: 0.5rem 2rem;
 }

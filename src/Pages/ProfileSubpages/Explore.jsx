@@ -13,7 +13,7 @@ import s4 from "../../Assets/stat4.png";
 import s5 from "../../Assets/stat5.png";
 import s6 from "../../Assets/stat6.png";
 
-const Find = () => {
+const Explore = () => {
   const [findButton, setFindButton] = useState(true);
   const [findMatch, setMatch] = useState(0);
   const [color, setColor] = useState("");
@@ -53,6 +53,7 @@ const Find = () => {
       ) : (
         <div className="profile">
           <div className="left">
+            <p className="title">Skills</p>
             <div className="textContainer">
               <p>Social Skills</p>
               <p>70%</p>
@@ -99,15 +100,15 @@ const Find = () => {
             <div className="games">
               <p>Favourite games</p>
               <div className="grid-container">
-                <div className="box">Box 1</div>
-                <div className="box">Box 2</div>
-                <div className="box">Box 3</div>
-                <div className="box">Box 4</div>
-                <div className="box">Box 5</div>
-                <div className="box">Box 6</div>
-                <div className="box">Box 7</div>
-                <div className="box">Box 8</div>
-                <div className="box">Box 9</div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
               </div>
             </div>
           </div>
@@ -127,8 +128,8 @@ const Find = () => {
         </div>
       ) : (
         <div className="chooseButtons">
-          <button onClick={nextMatch}>nah</button>
-          <button onClick={nextMatch}>yes</button>
+          <button id="no" onClick={nextMatch}>nah</button>
+          <button id="yes" onClick={nextMatch}>yes</button>
         </div>
       )}
     </div>
@@ -136,4 +137,4 @@ const Find = () => {
 };
 
 
-export default Find;
+export default Explore;

@@ -29,14 +29,14 @@ const Home = () => {
       <div className="scroll">
         <div className="landingPage">
           <div className="navbar">
-            <a href="strona_home.html">
-              <div className="left">PixelHeart</div>
+            <a href="#">
+              <div className="navLeft">PixelHeart</div>
             </a>
-            <div className="right">
+            <div className="navRight">
               <a href="/">
                 <div>Home</div>
               </a>
-              <a href="strona_about_us.html">
+              <a href="#">
                 <div>About Us</div>
               </a>
               <Link to="login">

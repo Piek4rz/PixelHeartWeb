@@ -8,7 +8,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import "../Components/Background/MainBackground.css";
 import Profile from "./ProfileSubpages/Profile";
-import Find from "./ProfileSubpages/Find";
+import Explore from "./ProfileSubpages/Explore";
 import List from "./ProfileSubpages/List";
 
 const Main = () => {
@@ -80,7 +80,7 @@ const Main = () => {
         {/*   <p>Lvl.{loggedUser.age}</p> */}
 
         {/*  <Link to="profile">Profile</Link>*/}
-        {/*  <Link to="love">Find Love</Link>*/}
+        {/*  <Link to="love">Explore Love</Link>*/}
         {/*  <p>Love list</p>*/}
         {/*  <ul>*/}
         {/*    {matches.map((match) => (*/}
@@ -157,9 +157,8 @@ const Main = () => {
         </div>
         <Routes>
           <Route path="profile" exec element={<Profile/>} />
-          <Route path="love" exec element={<h1><Find/></h1>} />
+          <Route path="love" exec element={<h1><Explore/></h1>} />
           <Route path="list" exec element={<h1><List/></h1>} />
-          <Route path="/" exec element={<h1>Główny main!</h1>} />
           <Route path="/*" exec element={<h1>?????</h1>} />
         </Routes>
       </div>

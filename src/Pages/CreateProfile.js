@@ -215,7 +215,7 @@ const CreateProfile = () => {
           });
       });
     }
-    navigate("/Main");
+    navigate("/Main/profile");
   };
 
   const handleClickDiv = (gameId) => {

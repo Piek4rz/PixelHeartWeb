@@ -65,7 +65,7 @@ const Login = () =>{
                                 <a href="" onClick={() => handleClick("back")}> &lt;Back</a>
                             </div>
                             <div className="col-lg-4 mt-5">
-                                <Link to="/Main">
+                                <Link to="/Main/profile">
                                     <Button className="buttonRegister" onClick={() => handleSubmit()} text="Login!" />
                                 </Link>
                             </div>

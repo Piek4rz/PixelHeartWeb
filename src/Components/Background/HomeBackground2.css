@@ -62,18 +62,18 @@ a{
     padding-top: 1.5rem;
 }
 
-.left {
+.navLeft {
     font-size: 4rem;
 }
 
 
-.right {
+.navRight {
     font-size: 3rem;
     display: flex;
     justify-content: flex-end;
 }
 
-.right div {
+.navRight div {
     margin-left: 3rem;
 }
 
@@ -130,7 +130,7 @@ a{
         font-size: 3rem;
     }
 
-    .right {
+    .navRight {
         font-size: 2rem;
         justify-content: center;
         margin-top: 1rem;
@@ -161,11 +161,11 @@ a{
         margin-top: 12rem;
     }
 
-    .left {
+    .navLeft {
         font-size: 3rem;
     }
 
-    .right {
+    .navRight {
         font-size: 2rem;
         justify-content: center;
         margin-top: 1rem;
@@ -191,11 +191,11 @@ a{
         margin-top: 4rem;
     }
 
-    .left {
+    .navLeft {
         font-size: 2rem;
     }
 
-    .right {
+    .navRight {
         font-size: 1rem;
         justify-content: center;
         margin-top: 1rem;
