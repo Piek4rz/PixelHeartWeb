@@ -7,19 +7,17 @@
 }
 
 .profilesList{
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
-    flex-wrap: nowrap;
     width: 40%;
     height: 65vh;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .profileCard{
     background: rgba(4, 8, 21, 0.50);
     border-radius: 20px;
-    min-height: 5rem;
+    margin-bottom: 0.5rem;
+    min-height: 7rem;
     display: flex;
     align-items: center;
     padding: 0 1rem 0 1rem;
@@ -28,12 +26,12 @@
 .cardContents{
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .cardContents img{
-    width: 4rem;
+    width: 6rem;
     border-radius: 10px;
-    padding-right: 1rem ;
 }
 
 .chatContainer{
@@ -46,7 +44,53 @@
     flex-direction: column;
 }
 
+.cardText{
+    padding-left: 3rem;
+    flex-grow: 1;
+}
+
+
 .message{
     font-size: 1.5rem;
     font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
 }
+
+@media screen and (max-width: 1100px) {
+    .cardText {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .chatContainer{
+        display: none;
+    }
+    .profilesList{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .profileCard{
+
+        min-height: 5rem;
+
+    }
+
+    .cardContents img{
+        width: 4rem;
+        border-radius: 10px;
+    }
+
+    .cardText p{
+        font-size: 1.2rem;
+    }
+}
+
+
+

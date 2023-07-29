@@ -6,6 +6,13 @@ import person2 from "../../Assets/person2.png";
 import person3 from "../../Assets/person3.png";
 import Button from "../../Components/Button/Button";
 import { useState, useEffect } from "react";
+import s1 from "../../Assets/stat1.png";
+import s2 from "../../Assets/stat2.png";
+import s3 from "../../Assets/stat3.png";
+import s4 from "../../Assets/stat4.png";
+import s5 from "../../Assets/stat5.png";
+import s6 from "../../Assets/stat6.png";
+
 const Find = () => {
   const [findButton, setFindButton] = useState(true);
   const [findMatch, setMatch] = useState(0);
@@ -15,19 +22,16 @@ const Find = () => {
       photo: person1,
       name: "Jane",
       lvl: 21,
-      color: "green",
     },
     {
       photo: person2,
       name: "Mikel",
       lvl: 25,
-      color: "blue",
     },
     {
       photo: person3,
       name: "Joshua",
       lvl: 29,
-      color: "red",
     },
   ];
 
@@ -37,7 +41,7 @@ const Find = () => {
       if (newMatch >= matches.length) {
         newMatch = 0;
       }
-      setColor(matches[newMatch].color);
+      // setColor(matches[newMatch].color);
       return newMatch;
     });
   };
@@ -48,12 +52,67 @@ const Find = () => {
         <img src={photo}></img>
       ) : (
         <div className="profile">
-          <div>
-            <p className="lvl">Lv {matches[findMatch].lvl}</p>
-            <p>{matches[findMatch].name}</p>
+          <div className="left">
+            <div className="textContainer">
+              <p>Social Skills</p>
+              <p>70%</p>
+            </div>
+            <img src={s1}/>
+            <div className="textContainer">
+              <p>Agility</p>
+              <p>35%</p>
+            </div>
+            <img src={s2}/>
+            <div className="textContainer">
+              <p>Party</p>
+              <p>80%</p>
+            </div>
+            <img src={s3}/>
+            <div className="textContainer">
+              <p>Gaming</p>
+              <p>90%</p>
+            </div>
+            <img src={s4}/>
+            <div className="textContainer">
+              <p>Sanity</p>
+              <p>15%</p>
+            </div>
+            <img src={s5}/>
+            <div className="textContainer">
+              <p>Strength</p>
+              <p>85%</p>
+            </div>
+            <img src={s6}/>
+
           </div>
-          <img src={matches[findMatch].photo}></img>
+          <div className="middle">
+            <p>
+              <span className="lvl">Lv {matches[findMatch].lvl}.</span> {matches[findMatch].name}
+            </p>
+            <img src={matches[findMatch].photo}></img>
+
+          </div>
+          <div className="right">
+            <div className="desc">
+              <p>Description</p>
+            </div>
+            <div className="games">
+              <p>Favourite games</p>
+              <div className="grid-container">
+                <div className="box">Box 1</div>
+                <div className="box">Box 2</div>
+                <div className="box">Box 3</div>
+                <div className="box">Box 4</div>
+                <div className="box">Box 5</div>
+                <div className="box">Box 6</div>
+                <div className="box">Box 7</div>
+                <div className="box">Box 8</div>
+                <div className="box">Box 9</div>
+              </div>
+            </div>
+          </div>
         </div>
+
       )}
       {findButton ? (
         <div className="chooseButtons">

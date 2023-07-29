@@ -1,50 +1,126 @@
 .explore {
-  z-index: 100;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  width: 40rem;
+  background: rgba(4, 8, 21, 0.50);
   margin: 0 auto;
   border-radius: 20px;
+  width: 80%;
 
 }
 
-.explore img {
-  height: 35rem;
-  z-index: 100;
-  border: solid white 0.25rem;
-}
 
 .chooseButtons {
-  z-index: 100;
   display: flex;
-  margin: 1rem;
+  margin: 4rem;
 }
 
 button {
+  border-radius: 5px;
   margin: 1rem;
 }
 
 .profile {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
 }
 
-.profile p {
-  font-size: 4rem;
-  margin: 0.5rem;
-}
+
 
 .profile div {
   font-size: 4rem;
   display: flex;
-  flex-direction: row;
 }
 
 .lvl {
   color: rgba(2, 255, 2, 0.918);
 }
+
+.left{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  flex-grow: 1;
+}
+
+.left p{
+  font-size: 3rem;
+  font-weight: normal;
+  height: 3rem;
+  z-index: 100;
+}
+
+.left .textContainer{
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.left img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.middle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.middle p {
+   font-size: 4rem;
+   margin: 0.5rem;
+ }
+
+.middle img {
+  border: solid white 0.25rem;
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.right{
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.right .desc{
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.right .games{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  flex-direction: column;
+  height: auto;
+}
+
+.right .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  align-items: center;
+  margin: 0 4rem 0 4rem;
+  gap: 1rem;
+}
+
+.right .box {
+  background-color: #f0f0f0;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 2rem;
+  width: 5vw;
+  height: 5vw;
+  margin: 0;
+}
+

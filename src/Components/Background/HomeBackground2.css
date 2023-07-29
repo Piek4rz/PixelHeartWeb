@@ -294,7 +294,7 @@ a{
     }
 }
 
-span
+.info span
 {
     position: absolute;
     right: -600px;
