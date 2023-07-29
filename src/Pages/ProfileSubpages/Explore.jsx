@@ -49,37 +49,37 @@ const Explore = () => {
   return (
     <div style={{ backgroundColor: color }} class="explore">
       {findButton ? (
-        <img src={photo}></img>
+        <img id="unknown" src={photo}></img>
       ) : (
         <div className="profile">
           <div className="left">
             <p className="title">Skills</p>
-            <div className="textContainer">
+            <div className="textContainer2">
               <p>Social Skills</p>
               <p>70%</p>
             </div>
             <img src={s1}/>
-            <div className="textContainer">
+            <div className="textContainer2">
               <p>Agility</p>
               <p>35%</p>
             </div>
             <img src={s2}/>
-            <div className="textContainer">
+            <div className="textContainer2">
               <p>Party</p>
               <p>80%</p>
             </div>
             <img src={s3}/>
-            <div className="textContainer">
+            <div className="textContainer2">
               <p>Gaming</p>
               <p>90%</p>
             </div>
             <img src={s4}/>
-            <div className="textContainer">
+            <div className="textContainer2">
               <p>Sanity</p>
               <p>15%</p>
             </div>
             <img src={s5}/>
-            <div className="textContainer">
+            <div className="textContainer2">
               <p>Strength</p>
               <p>85%</p>
             </div>
